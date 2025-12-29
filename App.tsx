@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
@@ -11,13 +10,13 @@ import { MiniGame } from './components/MiniGame';
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen bg-black text-white relative flex flex-col items-center">
+    <div className="min-h-screen bg-black text-white relative flex flex-col items-center overflow-x-hidden">
       <DripOverlay />
       
-      <div className="w-full max-w-6xl px-4 z-10">
+      <div className="w-full max-w-6xl px-4 sm:px-6 lg:px-8 z-10">
         <Navbar />
         
-        <main className="space-y-32 py-20">
+        <main className="space-y-20 md:space-y-32 py-10 md:py-20">
           <Hero />
           
           <section id="ca" className="scroll-mt-24">
@@ -28,8 +27,8 @@ const App: React.FC = () => {
             <Tokenomics />
           </section>
 
-          <section id="game" className="scroll-mt-24 flex flex-col items-center">
-             <h2 className="text-5xl font-bold mb-10 uppercase tracking-tighter text-center">The Great Race</h2>
+          <section id="game" className="scroll-mt-24 flex flex-col items-center px-2">
+             <h2 className="text-3xl md:text-5xl font-bold mb-6 md:mb-10 uppercase tracking-tighter text-center">The Great Race</h2>
              <MiniGame />
           </section>
 
@@ -38,8 +37,8 @@ const App: React.FC = () => {
           </section>
 
           <section id="chart" className="scroll-mt-24 w-full flex flex-col items-center">
-            <h2 className="text-5xl font-bold mb-10 uppercase tracking-tighter text-center">Live Swimmer Chart</h2>
-            <div className="w-full aspect-video md:aspect-[21/9] bg-white/5 border border-white/10 rounded-3xl overflow-hidden shadow-2xl backdrop-blur-sm">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 md:mb-10 uppercase tracking-tighter text-center px-4">Live Swimmer Chart</h2>
+            <div className="w-full aspect-[4/3] md:aspect-[21/9] bg-white/5 border border-white/10 rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl backdrop-blur-sm">
               <iframe 
                 src="https://dexscreener.com/solana/8a9vJCNjiM7LW43JeAYjf4FDVzi2qhoEF4fCWqwgpump?embed=1&theme=dark"
                 className="w-full h-full border-0"
