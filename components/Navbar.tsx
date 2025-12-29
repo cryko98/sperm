@@ -10,10 +10,12 @@ export const Navbar: React.FC = () => {
 
   return (
     <nav className="flex justify-between items-center py-5 sticky top-4 z-40 bg-black/90 backdrop-blur-xl rounded-full px-8 border border-white/10 mx-2 shadow-2xl group">
-      <div className="text-xl font-black tracking-tighter flex items-center gap-2 cursor-pointer" onClick={() => window.scrollTo({top:0, behavior: 'smooth'})}>
-        <div className="w-7 h-7 bg-white rounded-full flex items-center justify-center">
-            <div className="w-3.5 h-3.5 bg-black rounded-full" />
-        </div>
+      <div className="text-xl font-black tracking-tighter flex items-center gap-3 cursor-pointer" onClick={() => window.scrollTo({top:0, behavior: 'smooth'})}>
+        <img 
+          src="https://pbs.twimg.com/media/G9TUCxHWkAAHEkP?format=jpg&name=medium" 
+          alt="SPERM Logo" 
+          className="w-10 h-10 rounded-full object-cover grayscale contrast-125 border border-white/20 shadow-[0_0_15px_rgba(255,255,255,0.1)] hover:scale-110 transition-transform"
+        />
         <span className="hidden sm:inline">SPERM</span>
       </div>
       
