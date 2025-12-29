@@ -19,24 +19,6 @@ const App: React.FC = () => {
         
         <main className="space-y-32 py-20">
           <Hero />
-
-          <section id="video" className="scroll-mt-24 w-full flex flex-col items-center">
-            <div className="w-full max-w-4xl aspect-video bg-white/5 border border-white/10 rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(255,255,255,0.1)] relative">
-              <iframe 
-                width="100%" 
-                height="100%" 
-                src="https://www.youtube.com/embed/GYVoND3GBTo?autoplay=0&mute=0" 
-                title="SPERM Video" 
-                frameBorder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowFullScreen
-                className="grayscale contrast-125"
-              ></iframe>
-              {/* Decorative Drip */}
-              <div className="absolute -bottom-1 left-1/4 w-3 h-10 bg-white rounded-full opacity-30 animate-pulse"></div>
-              <div className="absolute -bottom-1 right-1/4 w-2 h-6 bg-white rounded-full opacity-20"></div>
-            </div>
-          </section>
           
           <section id="ca" className="scroll-mt-24">
             <ContractAddress />
