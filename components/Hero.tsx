@@ -28,7 +28,7 @@ export const Hero: React.FC = () => {
       </div>
       
       <p className="text-base md:text-2xl max-w-2xl text-white font-light italic leading-relaxed bg-black/60 backdrop-blur-md p-4 md:p-6 rounded-xl md:rounded-2xl border border-white/5 mx-2">
-        The first one to the finish line wins everything. 
+        everyone started as a sperm
         <br />
         <span className="font-bold not-italic text-white underline decoration-white/30 decoration-2 underline-offset-4 md:underline-offset-8 mt-1 md:mt-2 inline-block">$SPERM</span>
       </p>
